@@ -96,3 +96,25 @@ hellopromesa()
 .then(response => console.log(response))
 .catch(error=>console.log(error));
 
+// CLASES
+
+class calculator {
+    constructor(){
+        this.numA = 0;
+        this.numB = 0;
+    }
+    sum(numA, numB){
+        this.numA = numA;
+        this.numB = numB;
+        
+        return this.numA +this.numB;
+    }
+}
+
+const calculando = new calculator();
+
+console.log(calculando.sum(5,3));
+
+import {gaturro} from './mudule';
+
+gaturro();
